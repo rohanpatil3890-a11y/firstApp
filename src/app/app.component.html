@@ -2,6 +2,243 @@
     {{title}}
 </h1>
 
+<div class="container">
+
+    <div class="row">
+        <div *ngFor="let c of Car" class="col-md-4 mb-4">
+            <mat-card class="math-elevation-z2 h-100 postCard">
+                <mat-card-title-group>
+                    <mat-card-title matTooltipPosition="above" matTooltip="{{c.title}}">
+                        {{c.title}}</mat-card-title>
+                    <img mat-card-sm-image [src]="c.img">
+                </mat-card-title-group>
+                <mat-card-content class="cardcontent">
+                    {{c.content}}
+                </mat-card-content>
+
+                <mat-divider></mat-divider>
+
+                <mat-card-actions class="d-flex justify-content-between">
+                    <button mat-raised-button color="primary">Edit</button>
+                    <button mat-raised-button color="warn">Remove</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <div *ngFor="let p of Prod" class="col-md-4 mb-4">
+            <mat-card class="math-elevation-z2 h-100">
+                <mat-card-title-group>
+                    <mat-card-title matTooltipPosition="above" matTooltip="{{p.title}}">
+                        {{p.title}}</mat-card-title>
+                    <img mat-card-sm-image [src]="p.img">
+                </mat-card-title-group>
+                <mat-card-content class="cardcontent">
+                    {{p.content}}
+                </mat-card-content>
+
+                <mat-divider></mat-divider>
+
+                <mat-card-actions class="d-flex justify-content-between">
+                    <button mat-raised-button color="primary">Edit</button>
+                    <button mat-raised-button color="warn">Remove</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <div *ngFor="let b of Bike" class="col-md-4 mb-4">
+            <mat-card class="example-card">
+                <mat-card-title-group>
+                    <mat-card-title matTooltipPosition="above" matTooltip="{{b.title}}">{{b.title}}</mat-card-title>
+                    <img mat-card-sm-image [src]="b.img">
+                </mat-card-title-group>
+                <mat-card-content>
+                    {{b.content}}
+                </mat-card-content>
+                <mat-divider></mat-divider>
+                <mat-card-actions class="d-flex justify-content-between">
+                    <button mat-raised-button color="primary">Edit</button>
+                    <button mat-raised-button color="warn">Remove</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+
+
+    <hr>
+
+    <div class="row">
+        <div *ngFor="let m of Mobile" class="col-md-4 mb-4">
+            <mat-card class="example-card">
+                <mat-card-title-group>
+                    <mat-card-title matTooltipPosition="above" matTooltip="{{m.title}}">{{m.title}}</mat-card-title>
+                    <img mat-card-sm-image [src]="m.img">
+                </mat-card-title-group>
+                <mat-card-content>
+                    {{m.content}}
+                </mat-card-content>
+                <mat-divider></mat-divider>
+                <mat-card-actions class="d-flex justify-content-between">
+                    <button mat-raised-button color="primary">Edit</button>
+                    <button mat-raised-button color="warn">Remove</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+
+    <hr>
+
+
+    <div class="row">
+        <div *ngFor="let P of Post2" class="col-md-4 mb-4">
+            <mat-card class="example-card h-100 postCardJ">
+
+                <mat-card-title matTooltipPosition="above" matTooltip="{{P.title}}">
+                    <h2>{{P.title}}</h2>
+                </mat-card-title>
+
+                <mat-card-content>
+                    {{P.body}}
+                </mat-card-content>
+                <mat-divider></mat-divider>
+                <mat-card-actions class="d-flex justify-content-between">
+                    <button mat-raised-button color="primary">Edit</button>
+                    <button mat-raised-button color="warn">Remove</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <div *ngFor="let d of Dev" class="col-md-4 mb-4">
+            <mat-card class="example-card h-100 postCardJ">
+
+                <mat-card-title matTooltipPosition="above" matTooltip="{{d.title}}">
+                    <h2>{{d.title}}</h2>
+                </mat-card-title>
+
+                <mat-card-content>
+                    {{d.body}}
+                </mat-card-content>
+                <mat-divider></mat-divider>
+                <mat-card-actions class="d-flex justify-content-between">
+                    <button mat-raised-button color="primary">Edit</button>
+                    <button mat-raised-button color="warn">Remove</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <div *ngFor="let m of movie" class="col-md-4 mb-4">
+            <mat-card class="example-card h-100 postCardJ">
+
+                <mat-card-title matTooltipPosition="above" matTooltip="{{m.title}}">
+                    <h2>{{m.title}}</h2>
+                </mat-card-title>
+
+                <mat-card-content>
+                    {{m.body}}
+                </mat-card-content>
+                <mat-divider></mat-divider>
+                <mat-card-actions class="d-flex justify-content-between">
+                    <button mat-raised-button color="primary">Edit</button>
+                    <button mat-raised-button color="warn">Remove</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <div *ngFor="let e of edu" class="col-md-4 mb-4">
+            <mat-card class="example-card h-100 postCardJ">
+
+                <mat-card-title matTooltipPosition="above" matTooltip="{{e.title}}">
+                    <h2>{{e.title}}</h2>
+                </mat-card-title>
+
+                <mat-card-content>
+                    {{e.body}}
+                </mat-card-content>
+                <mat-divider></mat-divider>
+                <mat-card-actions class="d-flex justify-content-between">
+                    <button mat-raised-button color="primary">Edit</button>
+                    <button mat-raised-button color="warn">Remove</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <div *ngFor="let p of JsonP" class="col-md-4 mb-4">
+            <mat-card class="example-card h-100 postCardJ">
+
+                <mat-card-title matTooltipPosition="above" matTooltip="{{p.title}}">
+                    <h2>{{p.title}}</h2>
+                </mat-card-title>
+
+                <mat-card-content>
+                    {{p.body}}
+                </mat-card-content>
+                <mat-divider></mat-divider>
+                <mat-card-actions class="d-flex justify-content-between">
+                    <button mat-raised-button color="primary">Edit</button>
+                    <button mat-raised-button color="warn">Remove</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+</div>
+
+movie
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="container">
     <div class="row">

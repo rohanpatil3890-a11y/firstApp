@@ -1,5 +1,26 @@
 import { Component } from '@angular/core';
 import { Ibike, Ibooks, Icar, Ifroot, Igames, Igrocery, Ilaptop, Imobile, Imovies, Isimcard, ITV, Iuser, Ivag, Iwatch } from './shared/model/interface';
+import { posts } from './shared/const/post';
+import { Iposts } from './shared/model/post';
+import { Icars } from './shared/model/cars';
+import { Cars } from './shared/const/cars';
+import { Ipost } from './shared/model/jsonPost';
+import { jsonPost } from './shared/const/json';
+import { Iprod } from './shared/model/product';
+import { products } from './shared/const/product';
+import { Ipost2 } from './shared/model/post2';
+import { posts2 } from './shared/const/post2';
+import { Idev } from './shared/model/dev';
+import { dev } from './shared/const/dev';
+import { Imovie } from './shared/model/movie';
+import { moviePosts } from './shared/const/movie';
+import { Idev2 } from './shared/model/dev2';
+import { educationPosts } from './shared/const/dev2';
+import { IBike } from './shared/model/bike';
+import { Bikes } from './shared/const/bike';
+// import { mobiles } from './shared/const/mobile';
+import { IMobile } from './shared/model/mobile';
+import { Mobiles } from './shared/const/mobile';
 
 @Component({
   selector: 'app-root',
@@ -7,8 +28,33 @@ import { Ibike, Ibooks, Icar, Ifroot, Igames, Igrocery, Ilaptop, Imobile, Imovie
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Table';
+  title = 'Card';
+
+  post : Array<Iposts> = posts 
+
+  Car : Array<Icars> = Cars
+
+  Prod : Array<Iprod> = products
+
+  JsonP : Array<Ipost> = jsonPost
+
+  Post2 : Array<Ipost2> = posts2
+
+  Dev : Array<Idev> = dev
+
+  movie : Array<Imovie> = moviePosts
+
+  edu : Array<Idev2> = educationPosts
+
+  Bike : Array<IBike> =  Bikes
+
+  Mobile : Array<IMobile> = Mobiles
+  
+
+
+
   list  = "List"
+
 
    skills : Array<string> = ["HTML","CSS","JAVASCRIPT","ANGULAR","NODE.JS"]
 
